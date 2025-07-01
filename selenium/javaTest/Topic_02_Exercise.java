@@ -1,6 +1,5 @@
-package webdriver;
+package javaTest;
 
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import org.testng.annotations.Test;
 
 public class Topic_02_Exercise {

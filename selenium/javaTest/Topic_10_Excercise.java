@@ -1,6 +1,5 @@
-package webdriver;
+package javaTest;
 
-import org.bouncycastle.oer.Switch;
 import org.testng.annotations.Test;
 
 import java.util.Scanner;
