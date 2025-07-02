@@ -216,15 +216,34 @@ public class Topic_01_Locator {
 
         //XPath vs partial link
         driver.findElement(By.xpath("//a[contains(@href,'/account/forgotpassword/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Forgot Your Password?')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'about-magento-demo-store/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Us')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'/index.php/contacts/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Contact')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'customer-service/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Service')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'/privacy-policy-cookie-restriction-mode/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Privacy')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'/catalog/seo_sitemap/category/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Site Map')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'term/popular/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Search')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'/catalogsearch/advanced/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Advanced Search')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'/index.php/customer/account/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'Account')]"));
+
         driver.findElement(By.xpath("//a[contains(@href,'http://live.techpanda.org/index.php/sales/guest/form/')]"));
+        driver.findElement(By.xpath("//a[contains(text(),'and Returns')]"));
 
     }
 
