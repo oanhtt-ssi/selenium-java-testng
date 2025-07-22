@@ -82,8 +82,6 @@ public class Topic_07_Element_Exercise_Register {
         Assert.assertEquals(driver.findElement(By.cssSelector("label#txtPassword-error")).getText(),"Mật khẩu phải có ít nhất 6 ký tự");
         Assert.assertEquals(driver.findElement(By.cssSelector("label#txtCPassword-error")).getText(),"Mật khẩu phải có ít nhất 6 ký tự");
 
-
-
     }
 
     @Test
@@ -99,7 +97,6 @@ public class Topic_07_Element_Exercise_Register {
         driver.findElement(By.cssSelector("button[type='submit']")).click();
 
         Assert.assertEquals(driver.findElement(By.cssSelector("label#txtCPassword-error")).getText(),"Mật khẩu bạn nhập không khớp");
-
 
     }
 
@@ -120,7 +117,6 @@ public class Topic_07_Element_Exercise_Register {
         driver.findElement(By.cssSelector("input#txtPhone")).clear();
         driver.findElement(By.cssSelector("input#txtPhone")).sendKeys("0287654321");
         Assert.assertEquals(driver.findElement(By.cssSelector("label#txtPhone-error")).getText(),"Số điện thoại bắt đầu bằng: 09 - 03 - 012 - 016 - 018 - 019 - 088 - 03 - 05 - 07 - 08");
-
 
     }
 
