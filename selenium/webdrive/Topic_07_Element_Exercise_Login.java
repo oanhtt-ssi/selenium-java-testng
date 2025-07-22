@@ -49,7 +49,6 @@ public class Topic_07_Element_Exercise_Login {
         Assert.assertTrue(driver.findElement(By.cssSelector("input#is_subscribed")).isEnabled());
         Assert.assertFalse(driver.findElement(By.cssSelector("input#is_subscribed")).isSelected());
 
-
     }
 
     @Test
@@ -147,6 +146,7 @@ public class Topic_07_Element_Exercise_Login {
         Assert.assertFalse(driver.findElement(By.cssSelector("li[class='8-char completed']")).isDisplayed());
         Assert.assertFalse(driver.findElement(By.cssSelector("li.username-check.completed")).isDisplayed());
         Assert.assertFalse(driver.findElement(By.cssSelector("li[class='plus-50 error completed']")).isDisplayed());
+
     }
 
     @Test
@@ -160,7 +160,6 @@ public class Topic_07_Element_Exercise_Login {
 
         Assert.assertEquals(driver.findElement(By.cssSelector("div#advice-required-entry-email")).getText(),"This is a required field.");
         Assert.assertEquals(driver.findElement(By.cssSelector("div#advice-required-entry-pass")).getText(),"This is a required field.");
-
 
     }
 
@@ -176,7 +175,6 @@ public class Topic_07_Element_Exercise_Login {
         driver.findElement(By.cssSelector("button[title='Login']")).click();
 
         Assert.assertEquals(driver.findElement(By.cssSelector("div#advice-validate-email-email")).getText(),"Please enter a valid email address. For example johndoe@domain.com.");
-
 
     }
 

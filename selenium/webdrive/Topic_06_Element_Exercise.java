@@ -15,6 +15,7 @@ public class Topic_06_Element_Exercise {
     public void beforeClass(){
         driver = new FirefoxDriver();
     }
+
     @Test
     public void TC_01_URL(){
         driver.get("https://live.techpanda.org/");
@@ -26,7 +27,6 @@ public class Topic_06_Element_Exercise {
         //driver.findElement(By.cssSelector("a[class='button']")).click();
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://live.techpanda.org/index.php/customer/account/create/");
-
 
     }
 
@@ -41,6 +41,7 @@ public class Topic_06_Element_Exercise {
         //driver.findElement(By.cssSelector("a[class='button']")).click();
 
         Assert.assertEquals(driver.getTitle(), "Create New Customer Account");
+
     }
 
     @Test
@@ -76,8 +77,6 @@ public class Topic_06_Element_Exercise {
         Assert.assertTrue(driver.getPageSource().contains("Create an Account"));
 
     }
-
-
 
     @AfterClass
     public void afterClass(){
