@@ -18,7 +18,7 @@ public class Topic_07_Element_Exercise_Login {
     @BeforeClass
     public void beforeClass(){
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
     }
     @Test
