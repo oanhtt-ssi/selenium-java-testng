@@ -171,9 +171,13 @@ public class Topic_08_Textbox_TextArea {
         Assert.assertTrue(driver.findElement(By.xpath("//h6[text()='Personal Details']")).isDisplayed());
 
         Assert.assertEquals(driver.findElement(By.cssSelector("input[name='firstName']")).getDomProperty("value"),firstName);
+        Assert.assertTrue(driver.findElement(By.cssSelector("input[name='firstName']")).isEnabled());
         Assert.assertEquals(driver.findElement(By.cssSelector("input[name='lastName']")).getDomProperty("value"),lastName);
+        Assert.assertTrue(driver.findElement(By.cssSelector("input[name='lastName']")).isEnabled());
         Assert.assertEquals(driver.findElement(By.xpath("//label[text()='Employee Id']/parent::div/following-sibling::div/input"))
                 .getDomProperty("value"),employeeID);
+        Assert.assertFalse(driver.findElement(By.xpath("//label[text()='Employee Id']/parent::div/following-sibling::div/input")).isEnabled());
+
 
         driver.findElement(By.xpath("//a[text()='Immigration']")).click();
         Assert.assertTrue(isLoadingIconDisappear());
