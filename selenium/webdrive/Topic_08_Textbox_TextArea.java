@@ -20,7 +20,7 @@ import static org.testng.Assert.assertTrue;
 public class Topic_08_Textbox_TextArea {
     WebDriver driver;
 
-    String firstName, lastName, fullName, emailAddress, username, password, employeeID, number, comment;
+    String firstName, lastName, fullName, emailAddress, password, employeeID, number, comment;
 
 
     @BeforeClass
@@ -30,7 +30,6 @@ public class Topic_08_Textbox_TextArea {
         lastName = "Carey";
         fullName = firstName + " " + lastName;
         emailAddress= "mariah" + new Random().nextInt(999) + "@hotmail.com";
-        username = "mariah" + new Random().nextInt(999);
         password = "Test@123";
         number = new Random().nextInt(999) + "-" + new Random().nextInt(999) + "-" + new Random().nextInt(999);
         comment = "This is generated data\nof people";
@@ -114,7 +113,7 @@ public class Topic_08_Textbox_TextArea {
         driver.findElement(By.xpath("//p[text()='Create Login Details']/following-sibling::div//span")).click();
         Thread.sleep(2000);
 
-        driver.findElement(By.xpath("//label[text()='Username']/parent::div/following-sibling::div/input")).sendKeys(username);
+        driver.findElement(By.xpath("//label[text()='Username']/parent::div/following-sibling::div/input")).sendKeys(emailAddress);
         driver.findElement(By.xpath("//label[text()='Password']/parent::div/following-sibling::div/input")).sendKeys(password);
         driver.findElement(By.xpath("//label[text()='Confirm Password']/parent::div/following-sibling::div/input")).sendKeys(password);
         driver.findElement(By.cssSelector("button[type='submit']")).click();
@@ -158,7 +157,7 @@ public class Topic_08_Textbox_TextArea {
         driver.findElement(By.cssSelector("input[name='username']")).clear();
         driver.findElement(By.cssSelector("input[name='password']")).clear();
 
-        driver.findElement(By.cssSelector("input[name='username']")).sendKeys(username);
+        driver.findElement(By.cssSelector("input[name='username']")).sendKeys(emailAddress);
         driver.findElement(By.cssSelector("input[name='password']")).sendKeys(password);
         driver.findElement(By.cssSelector("button[type='submit']")).click();
 

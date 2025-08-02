@@ -6,13 +6,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class Topic_01_Template {
     WebDriver driver;
 
     @BeforeClass
     public void beforeClass(){
         driver = new FirefoxDriver();
-        driver.get("https://live.techpanda.org/index.php/customer/account/login/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
     @Test
     public void TC_01(){
