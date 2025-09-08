@@ -14,7 +14,7 @@ public class Topic_01_Template {
     @BeforeClass
     public void beforeClass(){
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
     @Test
     public void TC_01(){
