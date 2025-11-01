@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Mobile app" verbose="1" parallel="tests" thread-count="3">
+
+    <test name="Run on MOBILE">
+            <packages>
+                <package name="mobile"></package>
+            </packages>
+    </test>
+
+
+</suite>

@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="listener.ScreenshotListener"></listener>
+    </listeners>
+    <parameter name="serverName" value="Live"></parameter>
+
+    <test name="Run on Chrome" preserve-order="false">
+        <parameter name="browserName" value="Chrome"></parameter>
+        <classes>
+            <class name="testng.Topic_11_Listener"/>
+<!--            <class name="testng.Topic_04_Priority"/>-->
+<!--            <class name="testng.Topic_02_Assert"/>-->
+<!--            <class name="testng.Topic_01_Annotations"/>-->
+<!--            <class name="testng.Topic_03_AlwayRun"/>-->
+        </classes>
+    </test>
+
+<!--    <test name="Run on Chrome">-->
+<!--        <parameter name="browserName" value="Chrome"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="testng.Topic_07_Multiple_Environment"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on FireFox">-->
+<!--        <parameter name="browserName" value="Firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="testng.Topic_07_Multiple_Environment"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on Edge">-->
+<!--        <parameter name="browserName" value="Edge"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="testng.Topic_07_Multiple_Environment"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="web"/>-->
+<!--        </run>-->
+<!--    </groups>-->
+<!--    <packages>-->
+<!--        <package name="web"></package>-->
+<!--        <package name="mobile"></package>-->
+<!--    </packages>-->
+
+
+</suite>

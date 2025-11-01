@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Web app" verbose="1" parallel="tests" thread-count="3">
+
+
+    <test name="Run on WEB">
+            <packages>
+                <package name="web"></package>
+            </packages>
+    </test>
+
+
+</suite>
